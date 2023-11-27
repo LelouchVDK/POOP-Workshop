@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rd01.oop.workshop.acquaintance;
+package com.example;
 
-import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -13,7 +12,8 @@ import java.util.UUID;
  *
  * @author ancla
  */
-public interface IBuildingManagementSystem {   
+public interface IBuildingManagementSystem 
+{   
     /**
      *
      * @return Map containing UUIDs of all buildings in the system along with an associated description (i.e. name)

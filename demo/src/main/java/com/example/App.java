@@ -14,7 +14,7 @@ public class App
         BuildingManagementSystem bms = new BuildingManagementSystem();
         Building building01 = new Building("La casa de Emil", UUID.randomUUID());
         building01.addTemperatureSensor(new TemperatureSensor("HotSensor", UUID.randomUUID()));
-        building01.addVentilationActuator(new VentilationActuator("LightSwitch", UUID.randomUUID());
+        building01.addVentilationActuator(new VentilationActuator("LightSwitch", UUID.randomUUID()));
         bms.addBuilding(building01);
 
         System.out.println(bms.getBuildings().get(0).getName());
