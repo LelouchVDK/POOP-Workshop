@@ -1,19 +1,25 @@
 package com.example;
 
-import java.util.List;
+
 import java.util.UUID;
+import java.util.ArrayList;
 
 public class Building extends Unit
 {
-    public List<Sensor> sensors;
-    public List<Actuator> actuators;
+    private ArrayList<Sensor> sensors = new ArrayList<Sensor>();
+    private ArrayList<Actuator> actuators = new ArrayList<Actuator>();
     
-    public List<Sensor> getSensors() { return sensors; }
+    public ArrayList<Sensor> getSensors() { return sensors; }
+
+    public Building(String name, UUID id)
+    {
+        super(name, id);
+    }
 
     /**
      * @return the actuators
      */
-    public List<Actuator> getActuators() { return actuators; }
+    public ArrayList<Actuator> getActuators() { return actuators; }
 
     public UUID addTemperatureSensor(TemperatureSensor sensor)
     {

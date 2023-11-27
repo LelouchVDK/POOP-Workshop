@@ -7,13 +7,22 @@ public class Unit
     private String name;
     public UUID id;
 
-    public String getName() 
+    /**
+     * Constructor
+     * @param name
+     * @param id
+     */
+    public Unit(String name, UUID id)
     {
-        return name;
+        this.name = name;
+        this.id = id;
     }
 
-    public UUID getId() 
-    {
-        return id;
-    }
+    /**
+     * Getter
+     * @return name
+     */
+    public String getName() { return name; }
+
+    public UUID getId() { return id; }
 }
