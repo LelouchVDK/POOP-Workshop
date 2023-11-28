@@ -4,6 +4,10 @@ package com.example;
 import java.util.UUID;
 import java.util.ArrayList;
 
+
+/**
+ * Building class thingie
+ */
 public class Building extends Unit
 {
     private ArrayList<Sensor> sensors = new ArrayList<Sensor>();
